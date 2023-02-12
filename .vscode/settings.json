@@ -1,3 +1,5 @@
 {
-  "workbench.colorTheme": "Min Light"
+  "workbench.colorTheme": "Min Light",
+  "randomThemeSwitcher.switchMode": "interval",
+  "randomThemeSwitcher.themeList": []
 }
