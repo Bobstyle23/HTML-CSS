@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,11 +19,11 @@ body {
   text-align: center;
   background-color: #f7f7f7;
   padding: 20px 40px;
+  position: relative;
 }
 
 .price {
   font-size: 22px;
-  margin-bottom: 5px;
 }
 
 .shipping {
@@ -30,7 +31,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
-  margin-bottom: 20px;
 }
 
 .description {
@@ -39,7 +39,7 @@ body {
 
 .details {
   text-transform: uppercase;
-  margin: 40px 0 20px 0;
+  margin: 25px 0 20px 0;
 }
 
 .add-cart {
@@ -49,6 +49,7 @@ body {
   text-transform: uppercase;
   width: 100%;
   padding: 20px 40px;
+  border-top: 4px solid black;
 }
 
 a:link {
@@ -62,7 +63,48 @@ a:hover {
 .add-cart:hover {
   background-color: white;
   color: black;
-  border-top: 4px solid black;
+}
+
+.title::before {
+  content: "sale";
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: #ec2f2f;
+  padding: 7px 15px;
+  color: white;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: darkorange;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.brown {
+  background-color: brown;
 }
 
 ul {
@@ -74,10 +116,43 @@ li {
   margin-bottom: 10px;
 }
 
-/* global reset
-   container is 820px
-   add margin
-   add padding
-   button is 100%
+/* Flexbox */
+/* 
+.product-info {
+  flex: 1;
+  margin-top: 25px;
+} */
 
-  */
+/* .product-detail {
+  flex: 1;
+} */
+
+.shipping-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+/* CSS Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.title,
+.add-cart {
+  grid-column: 1 / -1;
+}
+
+.details {
+  margin-top: 0;
+}

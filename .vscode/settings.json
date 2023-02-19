@@ -1,5 +1,18 @@
 {
-  "workbench.colorTheme": "Horizon Bright Italic",
+  "workbench.colorTheme": "91415015-8fe3-48eb-9951-70a5cd6cbb7f",
   "randomThemeSwitcher.switchMode": "interval",
-  "randomThemeSwitcher.themeList": []
+  "randomThemeSwitcher.themeList": [],
+  "randomThemeSwitcher.preventReloadThemeList": [
+    "Material Theme",
+    "Material Theme High Contrast",
+    "Material Theme Darker",
+    "Material Theme Darker High Contrast",
+    "Material Theme Palenight",
+    "Material Theme Palenight High Contrast",
+    "Material Theme Ocean",
+    "Material Theme Ocean High Contrast",
+    "Material Theme Lighter",
+    "Material Theme Lighter High Contrast"
+  ],
+  "randomThemeSwitcher.switchInterval": 30
 }
